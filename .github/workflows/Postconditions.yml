@@ -1,0 +1,31 @@
+name: Post-Conditions
+on:
+  workflow_call:
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.12.1]
+
+    steps:
+     - name: Checkout code
+       uses: actions/checkout@v2
+     - name: Install dependencies
+       run: npm install
+     - name: Run Allure Combine
+       run: npm run allureCombine
+     - name: Install allure commandline
+       if: success() || failure()
+       run: npm i -g allure-commandline
+     - name: Combine Allure
+       if: success() || failure()
+       run: npm run allureCombine
+     - name: Upload test report
+       if: success() || failure()
+       uses: actions/upload-artifact@v2
+       with:
+          name: Allure report
+          path: test/.artifacts/allure-report/complete.html

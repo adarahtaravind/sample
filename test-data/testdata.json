@@ -1,0 +1,27 @@
+
+    {
+        "industries" : "industries",
+        "Startups" : "Startups",
+        "testAnything" : "test anything",
+        "content": "content",
+        "getStarted": "Get started",
+        "email" : "a_nil@gmail.com",
+        "Enterprise": "Enterprise",
+        "Fintech": "Fintech",
+        "Healthcare":"Healthcare",
+        "eCommerceRetail": "eCommerce & Retail",
+        "blockChain" : "Blockchain & Web3",
+        "hrRecruiting" : "HR & Recruiting",
+        "PropertyManagement" : "Property Management",
+        "Emails": "Emails",
+        "internalApi": "Internal and third-party APIs",
+        "multyFlow": "Multi-user flows",
+        "chromeExtension" : "Chrome extensions",
+        "endToEnd": "End-to-end Success",
+        "wolfs" : "Wolf Tracts",
+        "BUYING" : "BUYING",
+        "started":"started",
+        "qaWolf" : "QA Wolf",
+        "iFrames": "iFrames",
+        "smsAndPhone": "SMS and phone calls"
+    }
