@@ -1,4 +1,4 @@
-name: ui_template
+name: UI TEST
 on:
     workflow_dispatch:
 jobs:
